@@ -2,17 +2,18 @@
 title: "Presentation Template"
 subtitle: "Create beautiful interactive slide decks with Reveal.js"
 format:
-  revealjs: 
+  revealjs:
+    center: false
     slide-number: true
     chalkboard: 
       buttons: false
     preview-links: auto
     logo: images/logo_no_text.png
-    footer: <https://developmentseed.org>
-    theme: white # try black for dark theme
+    footer: "[developmentseed.org](https://developmentseed.org)"
+    theme: black # try black for dark theme
     css: styles.css    
     navigation-mode: vertical
-    controls-layout: edges
+    controls-layout: bottom-right
     controls-tutorial: true
 ---
 

@@ -1,20 +1,16 @@
 /* css styles */
-/*:root {*/
-/*  /* Main colors */
-*/
-/*  --r-background-color: #443f3f;*/
-/*  --r-main-color: #fff;*/
-/*  --r-selection-background-color: #cf3f02;*/
-/*  --r-selection-color: #fff;*/
-/*}*/
-
-/*.reveal {*/
-/*  /*background: #443f3f;*/*/
-/*  color: #fff;*/
-/*}*/
 
 .reveal a:hover {
   color: #ff4f02;
+}
+
+/* More specific selectors for footer links */
+.reveal .footer a {
+  color: #cf3f02 !important;
+}
+
+.reveal .footer a:hover {
+  color: #cf3f02 !important;
 }
 
 /* Progress bar */
@@ -41,4 +37,37 @@
 ::selection {
   background: #cf3f02;
   color: #fff;
+}
+
+/* Navigation controls */
+.controls button {
+  color: #cf3f02 !important;
+}
+
+.controls button:hover {
+  color: #a33302 !important; /* assuming this is your hover color */
+}
+
+.controls .controls-arrow:before,
+.controls .controls-arrow:after {
+  background-color: #cf3f02;
+}
+
+.controls .controls-arrow:hover:before,
+.controls .controls-arrow:hover:after {
+  background-color: #a33302; /* assuming this is your hover color */
+}
+
+/* Logo in top-left */
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  right: unset !important;
+  top: 5px;
+  left: 12px;
+  height: 60px !important;
+  width: 60px !important;
+  max-width: unset !important;
+  max-height: unset !important;
 }
