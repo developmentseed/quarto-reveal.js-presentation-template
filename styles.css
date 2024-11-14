@@ -1,0 +1,44 @@
+/* css styles */
+/*:root {*/
+/*  /* Main colors */
+*/
+/*  --r-background-color: #443f3f;*/
+/*  --r-main-color: #fff;*/
+/*  --r-selection-background-color: #cf3f02;*/
+/*  --r-selection-color: #fff;*/
+/*}*/
+
+/*.reveal {*/
+/*  /*background: #443f3f;*/*/
+/*  color: #fff;*/
+/*}*/
+
+.reveal a:hover {
+  color: #ff4f02;
+}
+
+/* Progress bar */
+.reveal .progress {
+  background: rgba(207, 63, 2, 0.2);
+}
+
+.reveal .progress span {
+  background: #cf3f02;
+}
+
+/* Lists */
+.reveal ul li::marker {
+  color: #cf3f02;
+}
+
+/* Blockquotes */
+.reveal blockquote {
+  border-left: 4px solid #cf3f02;
+  padding-left: 1em;
+}
+
+/* Text selection */
+::selection {
+  background: #cf3f02;
+  color: #fff;
+}
