@@ -1,6 +1,9 @@
 # quarto-reveal.js-presentation-template
 A template for creating a presentation with Quarto and reveal.js
 
+![light theme](./light_theme.png)
+![dark theme](./dark_theme.png)
+
 ## How to use this template
 
 1. Create a new repository from this template and clone it to your local environment

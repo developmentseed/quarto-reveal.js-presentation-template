@@ -1,5 +1,8 @@
 /* css styles */
 
+.reveal a {
+  color: #cf3f02;
+}
 .reveal a:hover {
   color: #ff4f02;
 }

@@ -10,7 +10,7 @@ format:
     preview-links: auto
     logo: images/logo_no_text.png
     footer: "[developmentseed.org](https://developmentseed.org)"
-    theme: black # try black for dark theme
+    theme: white # try black for dark theme
     css: styles.css    
     navigation-mode: vertical
     controls-layout: bottom-right
