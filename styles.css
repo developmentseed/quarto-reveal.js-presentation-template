@@ -1,64 +1,102 @@
+:root {
+  --primary-color: #cf3f02;
+  --primary-hover: #ff4f02;
+  --primary-dark: #a33302;
+  --primary-transparent: rgba(207, 63, 2, 0.2);
+  --white: #fff;
+}
+
 /* css styles */
+.reveal section.title-slide h1,
+.reveal section.title-slide h2,
+.reveal section.title-slide p,
+.reveal h1.title,
+.reveal h2.subtitle,
+.reveal p.date,
+.reveal .quarto-title-author,
+.reveal .quarto-title-author-name,
+.reveal div.title-slide,
+.reveal #title-slide {
+  text-align: left !important;
+  margin-left: 0 !important;
+  justify-content: left !important;
+}
+
+/* Width constraints for just subtitle and date */
+.reveal h2.subtitle,
+.reveal p.date,
+.reveal #title-slide {
+  width: 60% !important;
+  max-width: 60% !important;
+}
+
+/* Remove additional indentation from author section */
+.reveal .quarto-title-author-name,
+.reveal .quarto-title-author,
+.reveal .quarto-title-authors {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  text-indent: 0 !important;
+  padding-start: 0 !important;
+  -webkit-padding-start: 0 !important;
+}
+
+/* Target the container of authors if it exists */
+.reveal .quarto-title-authors {
+  justify-content: left !important;
+  width: 60% !important;
+  max-width: 60% !important;
+}
+
+/* Inline code */
+.reveal code {
+  color: var(--primary-color);
+}
+
+.reveal .slide-logo {
+  z-index: -999 !important;
+}
 
 .reveal a {
-  color: #cf3f02;
+  color: var(--primary-color);
 }
 .reveal a:hover {
-  color: #ff4f02;
+  color: var(--primary-hover);
 }
 
 /* More specific selectors for footer links */
 .reveal .footer a {
-  color: #cf3f02 !important;
+  color: var(--primary-color) !important;
 }
 
 .reveal .footer a:hover {
-  color: #cf3f02 !important;
+  color: var(--primary-color) !important;
 }
 
 /* Progress bar */
 .reveal .progress {
-  background: rgba(207, 63, 2, 0.2);
+  background: var(--primary-transparent);
 }
 
 .reveal .progress span {
-  background: #cf3f02;
+  background: var(--primary-color);
 }
 
 /* Lists */
 .reveal ul li::marker {
-  color: #cf3f02;
+  color: var(--primary-color);
 }
 
 /* Blockquotes */
 .reveal blockquote {
-  border-left: 4px solid #cf3f02;
+  border-left: 4px solid var(--primary-color);
   padding-left: 1em;
 }
 
 /* Text selection */
 ::selection {
-  background: #cf3f02;
-  color: #fff;
-}
-
-/* Navigation controls */
-.controls button {
-  color: #cf3f02 !important;
-}
-
-.controls button:hover {
-  color: #a33302 !important; /* assuming this is your hover color */
-}
-
-.controls .controls-arrow:before,
-.controls .controls-arrow:after {
-  background-color: #cf3f02;
-}
-
-.controls .controls-arrow:hover:before,
-.controls .controls-arrow:hover:after {
-  background-color: #a33302; /* assuming this is your hover color */
+  background: var(--primary-color);
+  color: var(--white);
 }
 
 /* Logo in top-left */
@@ -73,4 +111,15 @@
   width: 60px !important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+.reveal .scrollable-output {
+  max-height: 60%; /* adjust this value as needed */
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* make it possible to hide a slide title */
+.hide-title h2 {
+  display: none;
 }

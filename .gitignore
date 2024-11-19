@@ -1,2 +1,5 @@
 /.quarto/
 /_site/
+/.ipynb_checkpoints/
+/.venv/
+/.jupyter_cache/

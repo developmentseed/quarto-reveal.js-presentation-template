@@ -15,9 +15,10 @@ A template for creating a presentation with Quarto and reveal.js
 
 3. Run `quarto publish gh-pages` to set up a `gh-pages` branch and configure the github pages deployment.
 
-4. Uncomment the `publish` step in [.github/workflows/quarto-publish.yml] and push to the remote repository
-
-  - This should trigger a build on the `gh-pages` branch which should be published to https://developmentseed.github.io/{repo_name}
+4. Enable publish actions
+  - Uncomment the `publish` step in [.github/workflows/quarto-publish.yml] to enable publishing to Github Pages on pushes to main. It will push to the `gh-pages` branch and the presentation will be published to https://developmentseed.github.io/{repo_name}
+  - Uncomment the `publish` step in [.github/workflows/quarto-preview.yml](./.github/workflows/quarto-preview.yml) to enable publishing pull request previews to Github Pages
+  - push to the remote repository
 
 ## Slides in markdown??
 
@@ -30,4 +31,11 @@ A template for creating a presentation with Quarto and reveal.js
 
 
 ## Local development
-You can run a local preview of the presentation with `quarto preview`. This will load a live preview of the presentation as you work on it.
+You can run a local preview of the presentation with `quarto preview`. This will load a live preview of the presentation as you work on it. If you want to execute code, you can set up a virtual environment with `uv`:
+  ```bash
+  uv venv && uv sync
+  ```
+Then you can run quarto with the virtual environment:
+  ```bash
+  uv run quarto preview .
+  ```

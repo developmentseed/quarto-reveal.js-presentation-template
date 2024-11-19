@@ -1,9 +1,12 @@
 ---
 title: "Presentation Template"
 subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "Your Name"
+date: "November 19, 2024"
 format:
   revealjs:
-    center: false
+    center: true
+    center-title-slide: true
     slide-number: true
     chalkboard: 
       buttons: false
@@ -15,6 +18,13 @@ format:
     navigation-mode: vertical
     controls-layout: bottom-right
     controls-tutorial: true
+    execute:
+      echo: true
+      eval: true
+      warning: false
+      cache: true
+title-slide-attributes:
+    data-background-image: images/devseed_background.png
 ---
 
 # First slide
@@ -35,9 +45,10 @@ import rasterio
 ```
 
 
-# LandsatLook
+# iframes
 
-- STAC-powered Landsat browser
+- fill entire slide with `background-iframe`
+- add an iframe in a slide
 
 ## {background-interactive=true background-iframe="https://landsatlook.usgs.gov/explore?date=2024-10-17%7C2024-11-14&sat=LANDSAT_9%7CLANDSAT_8"}
 
@@ -45,6 +56,26 @@ import rasterio
 <https://landsatlook.usgs.gov/explore>
 :::
 
+
+## Explore STAC Browser {.hide-title}
+
+- add slide content and an iframe
+
+::: {.r-stretch}
+<iframe 
+  src="https://radiantearth.github.io/stac-browser/#/?.language=en" 
+  width="100%"
+  height="100%"
+  style="border: none;"
+  allowFullScreen>
+</iframe>
+:::
+
+- and a custom footer
+
+::: footer
+<https://radiantearth.github.io/stac-browser/#/?.language=en>
+:::
 
 # images
 
